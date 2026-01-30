@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo "hello-world!"
+echo "hello-worlddddddddddddddddddd"
 
-echo " I am learning git "
- echo " PPPPP "
+echo " first code"
