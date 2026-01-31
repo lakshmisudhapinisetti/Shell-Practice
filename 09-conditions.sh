@@ -18,6 +18,7 @@ fi
 sleep 10
 
 Number=$n
+read $n
 
 echo "enter a number : $n "
 if [ $n % 2 -eq 0 ]
