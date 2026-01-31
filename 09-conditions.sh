@@ -18,9 +18,8 @@ fi
 sleep 10
 
 Number=$n
-read $n
-
 echo "enter a number : $n "
+read $n
 if [ $n % 2 -eq 0 ]
      echo " $n is even number "
 else
