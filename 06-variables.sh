@@ -1,13 +1,8 @@
 #!/bin/bash
 
-echo " enter your name :"
-read user_name
+TIMESTAMP=$(date)
 
-echo " username is $user_name "
-
-echo " enter your password :"
-read password
-
-echo "password is $password "
+echo "script executed at : $TIMESTAMP
+ 
 
 
