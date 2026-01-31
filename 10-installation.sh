@@ -1,0 +1,17 @@
+#!/bin/bash
+
+USERID=$(id -u)
+
+if [ $USERID -ne 0]; then
+     echo " please execuete with sudo access"
+     exit 1
+fi
+
+echo "Installing nginx"
+dnf install nginxx -y
+
+if [ $? -ne 0 ]; then
+    echo " Installing Nginx ...Failure"
+else
+    echo "Installing Nginx...SUCCESS"
+fi
