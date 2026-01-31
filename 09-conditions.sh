@@ -19,7 +19,7 @@ fi
 Number=$n
 echo "enter a number : "
 read $n
-if (Number % 2 == 0)
+if ((Number % 2 == 0)) ; then
      echo " $Number is even number "
 else
     echo "$Number is odd number"
