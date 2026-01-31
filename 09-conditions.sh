@@ -15,15 +15,14 @@ else
      echo "  given number $Num is less than 20"
 fi
 
-sleep 10
 
 Number=$n
-echo "enter a number : $n "
+echo "enter a number : "
 read $n
-if [ $n % 2 -eq 0 ]
-     echo " $n is even number "
+if (Number % 2 == 0)
+     echo " $Number is even number "
 else
-    echo "$n is odd number"
+    echo "$Number is odd number"
 fi      
 
 
