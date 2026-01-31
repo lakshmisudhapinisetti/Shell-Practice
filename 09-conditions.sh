@@ -16,13 +16,13 @@ else
 fi
 
 
-Number=$n
+
 echo "enter a number : "
-read $Number
-if (($Number % 2 == 0)) ; then
-     echo " $Number is even number "
+read n
+if [ $((n%2) -eq 0)) ]; then
+     echo " $n is even number "
 else
-    echo "$Number is odd number"
+    echo "$n is odd number"
 fi      
 
 
