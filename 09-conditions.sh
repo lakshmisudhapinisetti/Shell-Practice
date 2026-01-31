@@ -7,11 +7,11 @@
 
 Num=$1
 
-if [$Num -gt 20]; then
+if [ $Num -gt 20 ]; then
     echo " given number $Num is greater than 20 "
-elif [$Num -eq 20]; then
-    echo "given number $num is equal to 20"
+elif [ $Num -eq 20 ]; then
+    echo "given number $Num is equal to 20"
 else
-     echo " given number $num is less than 20"
+     echo " given number $Num is less than 20"
 fi
      
