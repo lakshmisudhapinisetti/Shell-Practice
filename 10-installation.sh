@@ -1,0 +1,33 @@
+#!/bin/bash
+
+USERID=$(id -u)
+
+if [ $USERID -ne 0 ]; then
+     echo " please execuete with sudo access"
+     exit 1
+fi
+
+echo "Installing nginx"
+dnf install nginx -y
+
+if [ $? -ne 0 ]; then
+    echo " Installing Nginx ...Failure"
+else
+    echo "Installing Nginx...SUCCESS"
+fi
+
+dnf install mysql -y
+
+if [ $? -ne 0 ]; then
+    echo " Installing MySQL ...Failure"
+else
+    echo "Installing MySQL...SUCCESS"
+fi
+
+dnf install nodejs -y
+
+if [ $? -ne 0 ]; then
+    echo " Installing nodejs ...Failure"
+else
+    echo "Installing nodejs...SUCCESS"
+fi
