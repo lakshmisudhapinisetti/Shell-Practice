@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 MESSAGE=""
-IP_ADDRESS=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
+
 
 log(){
     echo -e "$(date "+%Y-%m-%d %H:%M:%S") | $1"
@@ -20,7 +20,7 @@ do
     PARTITION=$(echo $line | awk '{print $7}')
 
     if [ "$USAGE" -ge "$USAGE_THRESHOLD" ]; then
-        MESSAGE+="High Disk usage on $PARTITION: $USAGE% <br>"
+        MESSAGE+="High Disk usage on $PARTITION: $USAGE% \n"
     fi
 done <<< $DISK_USAGE
 
